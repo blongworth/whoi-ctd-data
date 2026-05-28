@@ -14,6 +14,10 @@ The script writes:
 data/ar61b_ctd_cast_data.csv
 ```
 
+## Download
+
+[Download the AR61B CTD CSV](https://raw.githubusercontent.com/blongworth/whoi-ctd-data/main/data/ar61b_ctd_cast_data.csv)
+
 ## Provenance
 
 Source: <https://nes-lter-api.whoi.edu/>
