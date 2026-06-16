@@ -19,7 +19,7 @@ def cruise_table(cruise: str) -> pd.DataFrame:
     chlorophyll = (
         chlorophyll.groupby(["cruise", "cast", "niskin"], as_index=False)["chl"]
         .mean()
-        .rename(columns={"chl": "chlorophyl"})
+        .rename(columns={"chl": "chlorophyll"})
     )
 
     table = bottles.merge(metadata, on="cast", how="left").merge(
@@ -38,7 +38,7 @@ def cruise_table(cruise: str) -> pd.DataFrame:
             "temperature": table["t090c"],
             "salinity": table["sal00"],
             "oxygen": table["sbox0mm_kg"],
-            "chlorophyl": table["chlorophyl"],
+            "chlorophyll": table["chlorophyll"],
         }
     )
 
